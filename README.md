@@ -29,9 +29,9 @@ Let's suppose you work for a company which needs to integrate **Teravoz API** in
 Your company receives calls from customers, both new contacts and returning customers, and your boss has determined that for the first time a customer calls, such call should be directed to `900` queue. Returning customers should be handled by `910` queue.
 
 So the application has to do the following:
-- Listen to every event emitted by Teravoz at `/webhook` endpoint;
-- When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above;
-- When app is restarted, it needs to work as if it hasn't at all.
+- Listen to every event emitted by Teravoz at `/webhook` endpoint
+- When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above
+- When app is restarted, it needs to work as if it hasn't at all
 - _[bonus]_ a little dashboard showing current active calls
 
 Unfortunately, Teravoz doesn't have a _sandbox_ environment which you could use for interacting with, so you need to mock everything out.
