@@ -11,7 +11,7 @@ Here we're trying to assess the following skills:
 - Development practices like automated tests
 - Comprehensible English writing
 
-You can submit answers on a GitHub repository or gist, or by email.
+You can submit answers on a GitHub repository or gist, or by email if you require privacy or confidentiality.
 
 ## Tasks
 
@@ -32,6 +32,7 @@ So the application has to do the following:
 - Listen to every event emitted by Teravoz at `/webhook` endpoint;
 - When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above;
 - When app is restarted, it needs to work as if it hasn't at all.
+- _[bonus]_ a little dashboard showing current active calls
 
 Unfortunately, Teravoz doesn't have a _sandbox_ environment which you could use for interacting with, so you need to mock everything out.
 
