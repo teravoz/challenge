@@ -18,11 +18,11 @@ You can submit answers on a GitHub repository or gist, or by email if you requir
 
 **1. Proud of**
 
-Share a little piece of code or even an entire application, in any programming language, that you have developed and you're proud of, telling us why.
+Share a little piece of code or even an entire application, in any programming language, that you developed and you're proud of, telling us why.
 
 **2. Ashamed of**
 
-Share a little piece of code or even an entire application, in any programming language, that you have developed or seen and you're ashamed of (or secondhand embarrassed for), telling us why.
+Share a little piece of code or even an entire application, in any programming language, that you developed or saw and you're ashamed of (or secondhand embarrassed for), telling us why.
 
 **3. Write a client for Teravoz API**
 
