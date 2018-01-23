@@ -12,7 +12,7 @@ Here we're trying to assess the following skills:
 - Development practices like automated tests
 - Comprehensible English writing
 
-You can submit answers on a GitHub repository or gist, or by email if you require privacy or confidentiality.
+You can submit answers on a GitHub repository or gist, or by email if you require privacy or confidentiality. We'd like all documentation to be written in English, but if you're uncomfortable with it, it's OK to be in Portuguese.
 
 ## Tasks
 
