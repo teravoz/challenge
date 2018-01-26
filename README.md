@@ -26,8 +26,13 @@ Share a little piece of code or even an entire application, in any programming l
 
 **3. Write a client for Teravoz API**
 
-Let's suppose you work for a company which needs to integrate **Teravoz API** into their application.
-Your company receives calls from customers, both new contacts and returning customers, and your boss has determined that for the first time a customer calls, such call should be directed to `900` queue. Returning customers should be handled by `910` queue.
+Let's suppose you're a developer working for a company with a **call center** operation. There's a receptionist who handles calls and transfers them following some rules:
+- first, receptionist answers and asks customer's phone number
+- then, searches customer on company's contacts list system
+- if not found, registers customer number into contacts list, and then transfers call to extension `900`, which is a call center queue for handling first contact customers;
+- if found, transfers call to extension `901`, which is a call center queue for handling returning customers;
+
+Such operation is expensive, error-prone and takes a lot of time for a customer to be answered. Your company already uses Teravoz as call center platform provider. You envisioned that, using **Teravoz API** features, you could automate your call center operation. So you decided to integrate your company's system with Teravoz, by replacing manual steps like asking customer's phone number and deciding which queue to transfer call.
 
 So your **Node.js** application has to do the following:
 - Listen to every event emitted by Teravoz at `/webhook` endpoint
