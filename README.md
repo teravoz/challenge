@@ -35,7 +35,7 @@ Let's suppose you're a developer working for a company with a **call center** op
 Such operation is expensive, error-prone and takes a lot of time for a customer to be answered. Your company already uses Teravoz as call center platform provider, but no system integration yet. You envisioned that, using **Teravoz API** features, you could automate your call center operation. So you decided to integrate your company's system with Teravoz, by replacing receptionist's manual steps like asking customer's phone number and deciding which queue to transfer call.
 
 So your **Node.js** application has to do the following:
-- Listen to every event emitted by Teravoz at `/webhook` endpoint
+- Listen to events emitted by Teravoz at `/webhook` endpoint. Events are and come in the following order: `call.new`, `call.standby`, `call.waiting`, `call.ongoing`, `call.finished`
 - When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above, by POSTing to Teravoz API's `/action` endpoint
 - When app is restarted, it needs to work as if it hasn't at all - returning customers will always be returning customers
 - _[bonus]_ a little dashboard showing current active calls
