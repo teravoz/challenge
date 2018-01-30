@@ -32,15 +32,15 @@ Let's suppose you're a developer working for a company with a **call center** op
 - if not found, registers customer number into contacts list, and then transfers call to extension `900`, which is a call center queue for handling first contact customers;
 - if found, transfers call to extension `901`, which is a call center queue for handling returning customers;
 
-Such operation is expensive, error-prone and takes a lot of time for a customer to be answered. Your company already uses Teravoz as call center platform provider. You envisioned that, using **Teravoz API** features, you could automate your call center operation. So you decided to integrate your company's system with Teravoz, by replacing manual steps like asking customer's phone number and deciding which queue to transfer call.
+Such operation is expensive, error-prone and takes a lot of time for a customer to be answered. Your company already uses Teravoz as call center platform provider, but no system integration yet. You envisioned that, using **Teravoz API** features, you could automate your call center operation. So you decided to integrate your company's system with Teravoz, by replacing receptionist's manual steps like asking customer's phone number and deciding which queue to transfer call.
 
 So your **Node.js** application has to do the following:
 - Listen to every event emitted by Teravoz at `/webhook` endpoint
-- When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above
-- When app is restarted, it needs to work as if it hasn't at all
+- When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above, by POSTing to Teravoz API's `/action` endpoint
+- When app is restarted, it needs to work as if it hasn't at all - returning customers will always be returning customers
 - _[bonus]_ a little dashboard showing current active calls
 
-Unfortunately, Teravoz doesn't have a _sandbox_ environment which you could use for interacting with, so you need to mock everything out.
+Unfortunately, Teravoz doesn't have a _sandbox_ environment which you could use for interacting with, so you need to mock the required interaction between your application and Teravoz API.
 
 We're expecting your application to be fully operational and well documented. You don't need to use a database, a plain-text file shall do the job. You can use any library you want.
 
