@@ -36,7 +36,7 @@ Such operation is expensive, error-prone and takes a lot of time for a customer 
 
 So your **Node.js** application has to do the following:
 - Listen to events emitted by Teravoz at `/webhook` endpoint. Events are and come in the following order: `call.new`, `call.standby`, `call.waiting`, `actor.entered`, `call.ongoing`, `actor.left`, `call.finished`
-- When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above, by POSTing to Teravoz API's `/action` endpoint
+- When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above, by POSTing to Teravoz API's `/actions` endpoint
 - When app is restarted, it needs to work as if it hasn't at all - returning customers will always be returning customers
 - _[bonus]_ a little dashboard showing current active calls
 
