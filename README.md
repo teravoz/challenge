@@ -38,7 +38,8 @@ So your **Node.js** application has to do the following:
 - Listen to events emitted by Teravoz at `/webhook` endpoint. Events are and come in the following order: `call.new`, `call.standby`, `call.waiting`, `actor.entered`, `call.ongoing`, `actor.left`, `call.finished`. Those are life cycle events of a call.
 - When an event of type _call.standby_ arrives, you need to **delegate** that call based on the given criteria above, by POSTing to Teravoz API's `/actions` endpoint
 - When app is restarted, it needs to work as if it hasn't at all - returning customers will always be returning customers
-- _[bonus]_ a little dashboard showing current active calls
+- _[bonus 1]_ use of Docker containers
+- _[bonus 2]_ a little dashboard in React or other library, showing current active calls
 
 Unfortunately, Teravoz doesn't have a _sandbox_ environment which you could use for interacting with, so you need to mock the required interaction between your application and Teravoz API. For example, you need to simulate **POSTs** to your `/webhook` endpoint.
 
