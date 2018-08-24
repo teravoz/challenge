@@ -1,6 +1,6 @@
 # Thank God It's Black Friday
 
-Creates bursts of huge amounts of events, POSTing them to an endpoint defined by the environment variable `WEBHOOK`.
+Creates bursts of ever increasing amounts of events, POSTing them to an endpoint defined by the environment variable `WEBHOOK`.
 
 ## Requirements
 
