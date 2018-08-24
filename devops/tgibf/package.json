@@ -1,0 +1,11 @@
+{
+  "name": "tgibf",
+  "description": "Thank God It's Black Friday",
+  "author": "Junior Developer",
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "scripts": {
+    "start": "node ./tgibf.js"
+  }
+}
