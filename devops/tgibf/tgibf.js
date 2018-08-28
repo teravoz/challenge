@@ -1,4 +1,4 @@
-const emitEvent = require('./emit-event');
+const startEvents = require('./emit-event');
 
 // starts sending events
-emitEvent(process.env.WEBHOOK);
+startEvents(process.env.WEBHOOK);
