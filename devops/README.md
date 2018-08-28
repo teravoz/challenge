@@ -1,6 +1,6 @@
 # DevOps Challenge
 
-You're applying to a DevOps position at Teravoz, and in this step we'll require you to accomplish at least one of the four tasks listed below.
+You're applying to a DevOps position at Teravoz, and in this step we'll require you to accomplish two tasks listed below.
 
 Here we're trying to assess the following skills:
 
@@ -18,15 +18,7 @@ You can submit answers on a GitHub repository or gist, or by email if you requir
 
 ## Tasks
 
-**1. Proud of**
-
-Does this task make sense for a DevOps? What could be shared here?
-
-**2. Ashamed of**
-
-Does this task make sense for a DevOps? What could be shared here?
-
-**3. Prepare your company to integrate with Teravoz API**
+**1. Prepare your company to integrate with Teravoz API**
 
 Suppose you work for the world famous e-commerce **Teracompra**, that already uses **Teravoz** as its telephony provider. Now your boss decided it is time to integrate with **Teravoz API**, which is an opportunity to have more visibility and control over its call center operation, specially in the upcoming Black Friday, when there will be an enormous amount of calls and things get pretty messy on the support team.
 
@@ -44,6 +36,6 @@ So, you are required to do the following:
 
 As an answer, we expect a Vagrantfile or Terraform configurations with the whole infrastructure, and the respective instructions for us to run the same load testing.
 
-**4. Give us feedback**
+**2. Give us feedback**
 
 What do you think about this challenge? Is this a nice and reliable way of assessing your skills? Would you think of another way? Would you make it better?
