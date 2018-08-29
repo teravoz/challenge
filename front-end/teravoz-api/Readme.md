@@ -1,6 +1,6 @@
-# Thank God It's Black Friday
+# teravoz-api
 
-Creates bursts of ever increasing amounts of events, POSTing them to an endpoint defined by the environment variable `WEBHOOK`.
+Basic simulator for Teravoz API.
 
 ## Requirements
 
@@ -15,5 +15,22 @@ npm install
 
 Run
 ```
-WEBHOOK="http://localhost:3333/webhook" npm start
+WEBHOOK="http://localhost/webhook" npm start
+```
+
+Usage
+```
+curl \
+  -X POST \
+  -H 'Content-type: application/json' \
+  -d '{
+    "type": "dialer",
+    "numbers": [ "5511999998888" ],
+    "destination": "100",
+    "destination_type": "peer",
+    "code": "happy-peer-100",
+    "retries": "1",
+    "retry_gap": "10s",
+    "ttl": "5m"
+  }' http://localhost:3334/actions
 ```
