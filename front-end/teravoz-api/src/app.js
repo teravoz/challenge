@@ -38,6 +38,16 @@ app.post('/actions', (req, res) => {
 
 /**
   GET /peers
+  Returns:
+  {
+    "size": "1",
+    "list": [
+      {
+        "name": "Ana",
+        "number": "100"
+      }
+    ]
+  }
 */
 app.get('/peers', (req, res) => {
   console.info('GET: retrieving peers');
