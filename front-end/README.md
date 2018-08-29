@@ -25,7 +25,7 @@ Share a little piece of code or even an entire application, in any programming l
 
 Share a little piece of code or even an entire application, in any programming language, that you developed or saw and you're ashamed of (or secondhand embarrassed for), telling us why.
 
-**3. Write a Web panel for integrating with Teravoz API**
+**3. Write an application for integrating with Teravoz API**
 
 Suppose you work for the world famous e-commerce **Teracompra**, that already uses **Teravoz** as its telephony provider. Now your boss decided it is time to integrate with **Teravoz API**, in order to have more visibility and control over the call center operation.
 
@@ -57,9 +57,9 @@ So, your application needs to do the following:
 - For each _free_ peer, a way to trigger a call;
 - [_bonus_]: use of Docker containers;
 
-**Extra points**
+**Super Extra Points**
 
-Suppose your call center operation is really bigger and there are hundreds of peers. So, peer listing:
+Suppose your call center operation is really big and there are hundreds of peers. So, peer listing:
 - must be paginated, and by default sorted by _busy_ peers (appear on top of listing);
 - must have sorting by status and by last timestamp;
 - must be searchable by peer number;

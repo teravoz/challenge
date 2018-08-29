@@ -2,6 +2,10 @@
 
 Basic simulator for Teravoz API.
 
+Listens to GET on `/peers` endpoint and POST on `/actions`. After receiving a POST, starts emitting events `call.new`, `call.waiting`, `actor.entered`, `call.ongoing`, `actor.left`, `call.finished` in that order, with a random time gap between each event.
+
+Those events are according to Teravoz API documentation [here](https://developers.teravoz.com.br/).
+
 ## Requirements
 
 Node.js 8+
@@ -18,7 +22,7 @@ Run
 WEBHOOK="http://localhost/webhook" npm start
 ```
 
-Usage
+Use
 ```
 curl \
   -X POST \
