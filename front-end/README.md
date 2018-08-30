@@ -59,10 +59,10 @@ Your application will be assessed for the following requirements:
 
 **Super Extra Bonus**
 
-Suppose your call center operation is huge and consists of hundreds of peers. The peer listing:
+Suppose your call center operation is huge and consists of hundreds of peers. The list of peers:
 - must be paginated, and by default sorted by _busy_ peers (appearing on top);
 - must have sorting by status and by last timestamp;
-- must be searchable by peer number;
+- must be searchable by peer number.
 
 **4. Give us feedback**
 
