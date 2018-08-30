@@ -6,7 +6,7 @@ Here we're trying to assess the following skills:
 
 - Understanding and solving of a given problem
 - Comprehensible code writing and organization
-- Knowledge of HTML, CSS, and JavaScript
+- Knowledge of HTML, CSS and JavaScript
 - Use of React library and components
 - Use of Node.js runtime and its libraries
 - Intelligible and useful documentation writing, like READMEs and code comments
